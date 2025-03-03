@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/* Buttons */
+button {
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+    width: 200px;
+    max-width: 90%;
+}
+
+.red-rounded {
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+}
+
+.red-square {
+    background-color: red;
+    color: white;
+    border-radius: 0;
+}
+
+.neon-blue-rounded {
+    background-color: #00BFFF;
+    color: white;
+    border-radius: 10px;
+}
+
+.neon-blue-square {
+    background-color: #00BFFF;
+    color: white;
+    border-radius: 0;
+}
+
+.white-rounded {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.white-square {
+    background-color: white;
+    color: black;
+    border-radius: 0;
+    border: 1px solid black;
+}
+
+.pastel-pink-rounded {
+    background-color: pink;
+    color: white;
+    border-radius: 10px;
+}
+
+.pastel-pink-square {
+    background-color: pink;
+    color: white;
+    border-radius: 0;
+}
+
+.pastel-blue-rounded {
+    background-color: lightblue;
+    color: white;
+    border-radius: 10px;
+}
+
+.pastel-blue-square {
+    background-color: lightblue;
+    color: white;
+    border-radius: 0;
+}
+
+#button-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 12px 20px;
+        width: 100%;
+    }
+
+    #button-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    #button-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
